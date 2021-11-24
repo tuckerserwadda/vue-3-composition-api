@@ -1,6 +1,9 @@
 
 /<template>
+
   <div>
+    <div><router-link to="/posts">Posts</router-link></div>
+    <div><router-view></router-view></div>
     <div>Watch: {{totalItemsWatch}}</div>
     <div>WatchEffect: {{totalItemsWatchEffect}}</div>
     <h1>{{name}} </h1>
@@ -24,6 +27,7 @@
 
 <script >
 import YammyMeal from "./components/YammyMeal.vue"
+
 /**
  * to have reactive primitive variables(data) for example name, we need to import the the
  * ref function 
